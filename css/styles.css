@@ -95,9 +95,6 @@ body {
 .contacts-item:first-child {
   margin-right: 50px;
 }
-/* .contacts-list {
-  display: flex;
-} */
 
 .link-main {
   display: inline-block;
@@ -482,16 +479,8 @@ img {
 }
 .portfolio-cards-list-link {
   text-decoration: none;
-  /* position: relative; */
 }
-/* .portfolio-cards-list-item:focus,
-.portfolio-cards-list-item:hover {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+
 /* =====================footer============================ */
 
 .footer {
