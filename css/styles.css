@@ -469,6 +469,7 @@ img {
 }
 .portfolio-cards-list-link {
   text-decoration: none;
+  /* position: relative; */
 }
 /* .portfolio-cards-list-item:focus,
 .portfolio-cards-list-item:hover {
@@ -615,4 +616,91 @@ img {
 }
 .regular-customers-img {
   fill: #afb1b8;
+}
+.portfolio-cards-list-wrapper-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  top: 0;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  position: absolute;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 500ms linear;
+}
+.portfolio-cards-list-link:hover .portfolio-overlay,
+.portfolio-cards-list-link:focus .portfolio-overlay {
+  transform: translateY(0%);
+}
+
+.section-content-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.section-content-overlay {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 80px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+.section-content-item:hover .section-content-overlay {
+  transform: translateY(0%);
+}
+
+/* ========================== backdrop   ====================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f30c0c00;
+  padding: 0;
+  cursor: pointer;
 }
