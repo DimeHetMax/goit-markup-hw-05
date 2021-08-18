@@ -158,8 +158,6 @@ body {
 /* =============================section=========================== */
 .section-title {
   width: 1600px;
-  height: 600px;
-  background-size: cover;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -167,7 +165,6 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Imgmain.jpg);
   background-color: #c4c4c4;
-  flex-grow: 1;
 }
 
 .main-title {
@@ -222,7 +219,13 @@ body {
 .section-lead-item:last-child {
   margin-right: 0px;
 }
-
+.section-lead-pic-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .section-lead-header {
   position: absolute;
   width: 1px;
@@ -366,14 +369,15 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+
 .section-regular-customers-link:focus,
 .section-regular-customers-link:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
-.regular-customers-img:focus,
-.regular-customers-img:hover {
+.section-regular-customers-link:focus > .regular-customers-img,
+.section-regular-customers-link:hover > .regular-customers-img {
   fill: #2196f3;
 }
 /* ===================================portfolio=========================== */
@@ -431,14 +435,8 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.text-porfolio-padding:focus,
-.text-porfolio-padding:hover {
-  background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  /* border: 1px solid #eeeeee; */
-  box-sizing: border-box;
+.portfolio-cards-list-link:focus,
+.portfolio-cards-list-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -478,6 +476,7 @@ img {
 }
 .portfolio-cards-list-link {
   text-decoration: none;
+  display: block;
 }
 
 /* =====================footer============================ */
@@ -564,7 +563,7 @@ img {
 .section-team-social-item {
   display: flex;
 }
-.footer-social-list {
+.footer-social-list:not(:last-child) {
   margin-right: 10px;
 }
 .section-team-social-list:not(:last-child) {
