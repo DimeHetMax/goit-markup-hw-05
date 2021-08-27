@@ -225,6 +225,7 @@ body {
   align-items: center;
   height: 120px;
   margin-bottom: 30px;
+  background: #f5f4fa;
 }
 .section-lead-header {
   position: absolute;
